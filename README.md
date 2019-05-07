@@ -1,5 +1,4 @@
 # ReadCSV
-sample
 
 メニューの[プロジェクト] - [参照の追加] - [COM] の
 [Microsoft Excel 16.0 Object library]
