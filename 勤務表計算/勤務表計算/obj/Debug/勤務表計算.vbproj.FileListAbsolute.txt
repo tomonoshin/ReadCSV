@@ -1,0 +1,13 @@
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\bin\Debug\勤務表計算.exe.config
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\bin\Debug\勤務表計算.exe
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\bin\Debug\勤務表計算.pdb
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\bin\Debug\勤務表計算.xml
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.vbprojAssemblyReference.cache
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.vbproj.ResolveComReference.cache
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.kinmuForm.resources
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.Resources.resources
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.vbproj.GenerateResource.cache
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.vbproj.CoreCompileInputs.cache
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.exe
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.xml
+C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.pdb
