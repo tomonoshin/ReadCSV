@@ -11,3 +11,16 @@ C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.
 C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.exe
 C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.xml
 C:\Users\tomo\Desktop\勤務表計算\勤務表計算\obj\Debug\勤務表計算.pdb
+D:\home\ReadCSV\勤務表計算\勤務表計算\bin\Debug\勤務表計算.exe.config
+D:\home\ReadCSV\勤務表計算\勤務表計算\bin\Debug\勤務表計算.exe
+D:\home\ReadCSV\勤務表計算\勤務表計算\bin\Debug\勤務表計算.pdb
+D:\home\ReadCSV\勤務表計算\勤務表計算\bin\Debug\勤務表計算.xml
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.vbprojAssemblyReference.cache
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.vbproj.ResolveComReference.cache
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.kinmuForm.resources
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.Resources.resources
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.vbproj.GenerateResource.cache
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.vbproj.CoreCompileInputs.cache
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.exe
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.xml
+D:\home\ReadCSV\勤務表計算\勤務表計算\obj\Debug\勤務表計算.pdb

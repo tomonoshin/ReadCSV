@@ -58,12 +58,6 @@ Public Class kinmuForm
         'カンマ区切り
         cnt = stBuffer.Split(","c)
 
-        '項目が12個以外なら終了
-        If cnt.Count <> 12 Then
-            MessageBox.Show("項目の個数が不正です。", "項目エラー")
-            Exit Sub
-        End If
-
         '読み込みできる文字がなくなるまで繰り返す
         While (sr.Peek() > -1)
             'ファイルを 1 行ずつ読み込む
