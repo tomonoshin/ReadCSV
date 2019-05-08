@@ -27,58 +27,40 @@ Public Class kinmuForm
         Dim stBuffer As String        '読み込み用
         Dim overTime As TimeSpan      '残業時間用
 
-        Dim strDfaultTime As String = "19:00"       '就業時刻
+        Const strDfaultTime As String = "18:00"       '就業時刻
         Dim defaultTime As DateTime = DateTime.Parse(strDfaultTime)     '終業時刻をDateTime方型に変換
-        Dim cnt As String()
 
-        'ファイルが存在していなかったら終了
+        'ファイルが存在しない場合処理を終了する
         If System.IO.File.Exists(csvPath) = False Then
             MessageBox.Show("ファイルが存在しません。", "エラー")
             Exit Sub
         End If
 
-        'StreamReader の新しいインスタンスを生成する
         Dim sr As New System.IO.StreamReader(csvPath, System.Text.Encoding.GetEncoding("shift_jis"))
-
-        'FileInfo の新しいインスタンスを生成する
         Dim cFileInfo As New System.IO.FileInfo(csvPath)
 
-        'ファイルサイズが0なら終了
+        'ファイルサイズが0の場合処理を終了する
         If cFileInfo.Length = 0 Then
             MessageBox.Show("空ファイルです。", "エラー")
             Exit Sub
         End If
 
-        '1行飛ばす(項目)
-        sr.ReadLine()
-
-        'csv読み込み
-        stBuffer = sr.ReadLine()
-
-        'カンマ区切り
-        cnt = stBuffer.Split(","c)
+        sr.ReadLine()               '1行飛ばす(項目)
+        stBuffer = sr.ReadLine()    'csv読み込み
 
         '読み込みできる文字がなくなるまで繰り返す
         While (sr.Peek() > -1)
-            'ファイルを 1 行ずつ読み込む
-            stBuffer = sr.ReadLine()
+            stBuffer = sr.ReadLine()        'ファイルを 1 行ずつ読み込む
+            stResult = stBuffer.Split(","c) 'カンマ区切りで配列に格納
 
-            'カンマ区切りで配列に格納
-            stResult = stBuffer.Split(","c)
-
-            '始業時刻または就業時刻の中身がNULLだったらなにもしない
+            '始業時刻または就業時刻の中身がNULLの場合ループの先頭に戻る
             If stResult(4) = "" Or stResult(5) = "" Then
                 Continue While
             End If
 
-            'startTimeに始業時間を格納
-            startTime = DateTime.Parse(stResult(4))
-
-            'endTimeに就業時間を格納
-            endTime = DateTime.Parse(stResult(5))
-
-            '勤務時間の計算
-            totalTime += endTime - startTime
+            startTime = DateTime.Parse(stResult(4))     'startTimeに始業時間を格納
+            endTime = DateTime.Parse(stResult(5))       'endTimeに就業時間を格納
+            totalTime += endTime - startTime            '勤務時間の計算
 
             '残業時間計算
             If endTime > defaultTime Then
@@ -86,10 +68,9 @@ Public Class kinmuForm
             End If
         End While
 
-        'cReaderを閉じる
-        sr.Close()
+        sr.Close()  'cReaderを閉じる
 
         'メッセージボックスに出力
-        MessageBox.Show("総勤務時間は" & totalTime.TotalHours() & "時間です。" & Environment.NewLine & "残業時間は" & overTime.TotalHours() & "時間です。", "総勤務時間")
+        MessageBox.Show("総勤務時間は" & Math.Floor(totalTime.TotalHours()) & "時間です。" & Environment.NewLine & "残業時間は" & Math.Floor(overTime.TotalHours()) & "時間です。", "総勤務時間")
     End Sub
 End Class
