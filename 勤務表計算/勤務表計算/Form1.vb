@@ -46,7 +46,6 @@ Public Class kinmuForm
         End If
 
         sr.ReadLine()               '1行飛ばす(項目)
-        stBuffer = sr.ReadLine()    'csv読み込み
 
         '読み込みできる文字がなくなるまで繰り返す
         While (sr.Peek() > -1)
